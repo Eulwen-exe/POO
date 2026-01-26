@@ -16,4 +16,10 @@ p2.retirer_stock(5)
 p2.afficher()
 print(p2.valeur_stock())
 
+peripheriques = Categorie("Périphériques", "Claviers, souris, etc.")
+peripheriques.ajouter_produit(p1)
+peripheriques.ajouter_produit(p2)
+
+peripheriques.lister_produits()
+print(f"Valeur totale: {peripheriques.valeur_totale()}€")
 print(f"Total produits: {Produit.nb_produits}")
