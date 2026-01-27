@@ -55,3 +55,4 @@ class Categorie:
         for produit in self.produits:
             total += produit.valeur_stock()
         return total
+    
