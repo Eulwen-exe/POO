@@ -23,3 +23,14 @@ peripheriques.ajouter_produit(p2)
 peripheriques.lister_produits()
 print(f"Valeur totale: {peripheriques.valeur_totale()}€")
 print(f"Total produits: {Produit.nb_produits}")
+
+
+
+
+p = Produit("kb-001", "Clavier RGB", 79.99, 15)
+print(p.reference)  # KB-001
+print(p.prix_ttc)   # 95.99
+
+p.prix_ht = 69.99
+p.ajouter_stock(10)  # Stock: 25
+p.retirer_stock(5)   # Stock: 20
